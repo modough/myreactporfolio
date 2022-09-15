@@ -1,0 +1,67 @@
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgb(246, 247, 248);
+}
+.chart {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-container span:nth-of-type(1) {
+  font-weight: bold;
+}
+.experience-container span:nth-of-type(2) {
+  color: var(--dark-orange);
+  font-weight: bold;
+}
+.chart {
+  margin-bottom: 50px;
+}
+.experience-chart {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 0;
+  background-color: white;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgb(62, 61, 61) 0%,
+    lightgrey 100%
+  );
+}
+.experience-chart::before {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  top: 8px;
+  left: 8px;
+  z-index: -1;
+}
+
+/*Queries*/
+@media screen and (max-width: 480px) {
+  .chart {
+    gap: 25px;
+  }
+}

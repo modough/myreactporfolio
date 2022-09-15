@@ -1,0 +1,136 @@
+.intro {
+  background-image: url("../../assets/img/bg.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 100px;
+  gap: 100px;
+}
+.intro-left {
+  margin-top: 6rem;
+  display: flex;
+  position: relative;
+  flex: 2;
+  flex-direction: column;
+  gap: 2rem;
+}
+.intro-name {
+  display: flex;
+  flex-direction: column;
+}
+.intro-name > :nth-child(1) {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.intro-name > :nth-child(2) {
+  color: var(--dark-orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.intro-name > :nth-child(3) {
+  color: var(--white);
+  font-weight: 100;
+  font-size: 15px;
+}
+.intro-btn {
+  color: var(--white);
+  background-color: var(--black);
+  border: 3px solid var(--white);
+  border-radius: 50px;
+  font-size: 12px;
+  width: 120px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.intro-btn:hover {
+  border: 3px solid var(--dark-orange);
+  transform: scale(1.02);
+}
+.intro-social {
+  display: flex;
+  margin: 60px 0 200px 0;
+}
+.intro-social i {
+  width: 50px;
+  font-size: 50px;
+  color: var(--white);
+}
+.intro-social i:hover {
+  cursor: pointer;
+  color: var(--dark-orange);
+  transform: scale(1.1);
+}
+.intro-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+}
+.intro-pic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 0 0 var(--dark-orange);
+  background-size: cover;
+  border-radius: 50%;
+}
+.profilePicture {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  height: 92%;
+  width: 92%;
+  border-radius: 50%;
+}
+.profilePicture:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+/* Queries */
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    gap: 0;
+    padding: 50px 50px 100px 50px;
+  }
+  .intro-left {
+    margin: 3rem 0;
+    flex: 1;
+  }
+  .intro-social {
+    margin: 20px 0;
+  }
+  .intro-right {
+    flex: 1;
+    width: auto;
+  }
+  .intro-pic {
+    align-items: center;
+    margin: 0;
+    background-image: url("../../assets/img/profilePhoto (1).jpg");
+    width: 250px;
+    height: 250px;
+  }
+  .profilePicture {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intro-right {
+    height: 240px;
+  }
+  .intro-pic {
+    box-shadow: 0 -2px 0 0 var(--dark-orange);
+    top: 70px;
+  }
+  .profilePicture {
+    right: 10px;
+    bottom: 10px;
+  }
+}

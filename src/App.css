@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 20px;
+  src: url(../src/assets/fonts/Poppins-Regular.ttf);
+}
+:root {
+  --light-blue: rgb(4, 195, 255, 0.5);
+
+  --orange: #f57f17;
+  --dark-orange: #ff5823;
+  --orange-shadow: rgba(245, 127, 23, 0.2);
+  --white: #ffffff;
+  --black: #333333;
+  --disabled-btn: #09bead7a;
+  --error-message: #e44f4fd1;
+  --toast-error: #e44f4ffa;
+  --toast-shadow: #9c9c9ce3;
+  --toast-success: #0cbfae;
+  --loader-color: #0cbfae;
+  --blueCard: rgb(221, 248, 254, 0.9);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+}
+* {
+  font-family: "Poppins";
+  outline: none;
+}
+body {
+  margin: 0;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+}
+.btn {
+  color: var(--white);
+  background-color: var(--dark-orange);
+  border: 3px solid var(--black);
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: bold;
+  z-index: 700;
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1.02);
+}
