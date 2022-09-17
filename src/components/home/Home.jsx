@@ -9,6 +9,7 @@ import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
 import { ThemeContext } from "../context/context";
 import { useContext } from "react";
+import SideNavbar from "../sideNavbar/SideNavbar";
 
 const Home = () => {
   const Theme = useContext(ThemeContext);
@@ -21,6 +22,7 @@ const Home = () => {
         color: DarkMode ? "white" : "",
       }}
     >
+      <SideNavbar />
       <Navbar />
       <Intro />
       <Competences />

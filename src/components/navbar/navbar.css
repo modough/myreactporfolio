@@ -4,7 +4,7 @@
   z-index: 1;
   position: fixed;
   top: 0;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   padding: 20px 100px;
@@ -54,22 +54,7 @@
 
 /* Queries */
 @media screen and (max-width: 480px) {
-  .navbar-right {
-    display: none;
-  }
   .navbar-wrapper {
-    display: flex;
-    padding: 20px 40px;
-    width: 100%;
-    background-size: auto;
-    padding: 20px 50px;
-  }
-  .navbar-left {
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .btn {
-    width: 113px;
+    display: none;
   }
 }
