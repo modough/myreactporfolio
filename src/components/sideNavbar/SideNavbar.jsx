@@ -29,7 +29,21 @@ const SideNavbar = () => {
         </Link>
         <Toggle />
       </div>
-      <nav className={sidebar ? "sidebar-menu active" : "sidebar-menu"}>
+      <nav
+        className={sidebar ? "sidebar-menu active" : "sidebar-menu"}
+        style={{ backgroundColor: DarkMode ? "lightgrey" : "" }}
+      >
+        <Link to="#" className="menu">
+          <FontAwesomeIcon
+            icon={faXmark}
+            className="xmark"
+            style={{
+              color: DarkMode ? "grey" : "",
+              backgroundColor: DarkMode ? "lightgrey" : "",
+            }}
+            onClick={showSideNavbar}
+          />
+        </Link>
         <ul className="sidebar-menu-elm">
           <Link activeClass="active" to="intro" spy={true} smooth={true}>
             <li

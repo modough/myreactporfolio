@@ -58,7 +58,7 @@ const Competences = () => {
                 Seo:<br></br> Google Analytics, SEMrush, Gephi
               </li>
             </ol>
-            <a href="Mouhamed Mbaye (1).pdf" download="Mouhamed Mbaye (1).pdf">
+            <a href="Mouhamed Mbaye.pdf" download="Mouhamed Mbaye.pdf">
               <button
                 type="button"
                 className="button"
