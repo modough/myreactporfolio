@@ -8,7 +8,7 @@ const Footer = () => {
   const DarkMode = Theme.state.darkMode;
   return (
     <div className="footer">
-      <div class="footer-top">
+      <div className="footer-top">
         <a href="https://www.facebook.com/profile.php?id=100076500051415">
           <i
             className="fa fa-facebook-square"
@@ -35,7 +35,7 @@ const Footer = () => {
           ></i>
         </a>
       </div>
-      <div class="footer-bottom">
+      <div className="footer-bottom">
         <ul>
           <Link activeClass="active" to="intro" spy={true} smooth={true}>
             <li style={{ color: DarkMode ? "grey" : "" }}>Accueil</li>
