@@ -42,8 +42,8 @@ const Experience = () => {
           >
             1{" "}
           </div>
-          <span style={{ color: DarkMode ? "grey" : "" }}>Compagnies</span>
-          <span>travaillées</span>
+          <span style={{ color: DarkMode ? "grey" : "" }}>Compagnie</span>
+          <span>travaillée</span>
         </div>
       </div>
       <div className="experience-bottom"></div>
