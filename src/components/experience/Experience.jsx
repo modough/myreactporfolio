@@ -40,7 +40,7 @@ const Experience = () => {
             className="experience-chart"
             style={{ color: DarkMode ? "grey" : "" }}
           >
-            +2{" "}
+            1{" "}
           </div>
           <span style={{ color: DarkMode ? "grey" : "" }}>Compagnies</span>
           <span>travaillées</span>
